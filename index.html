@@ -2,19 +2,21 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
 
-  <!-- 网页标题：这里改成你自己的 -->
   <title>河北省互联网+不动产登记受理系统</title>
 
-  <!-- 网页 logo / favicon：这里替换成你的图标地址 -->
- <link rel="icon" href="/test/OIP.webp" type="image/webp" />
+  <link rel="icon" href="/test/OIP.webp" type="image/webp" />
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      touch-action: none;
     }
 
     html, body {
@@ -26,13 +28,15 @@
 
     body {
       display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     img {
       width: 100vw;
       height: 100vh;
       display: block;
-      object-fit: fill; /* 直接铺满全屏，不保留比例 */
+      object-fit: contain; /* 保持原比例，完整显示 */
       user-select: none;
       -webkit-user-drag: none;
       pointer-events: none;
@@ -40,7 +44,6 @@
   </style>
 </head>
 <body>
-  <!-- 这里替换成你的图片地址 -->
   <img src="/test/test.jpg" alt="full-screen-image">
 </body>
 </html>
